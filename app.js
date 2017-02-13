@@ -19,9 +19,9 @@ app.use(bodyParser.urlencoded({
 app.use("/js", express.static(__dirname + '/js'));
  app.get('/', function(req, res)
  {
-	 res.sendfile('index.html', {'root' : "view"});
+	 //res.sendfile('index.html', {'root' : "view"});
 	 console.log("hello");
-	 });
+	 //});
 	 
 	app.post("/add/record/detail",api.savedetail);//API for insert //
 	
