@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 var router = express.Router();
 var cors = require('cors');
-app.set('port', process.env.PORT || 8000);
+app.set('port', process.env.PORT || 8080);
 
 
 //app.use(cors());
@@ -34,7 +34,7 @@ router.get('/login',function(req,res){
 });*/
 
 router.get('/', function(req, res) {
-    res.sendFile("index.html", { "root": 'app' });
+   res.send('Hello');
 });
 
 app.use('/', router);
@@ -47,12 +47,6 @@ app.use("/fonts", express.static(__dirname + '/app/assets/fonts'));
 app.use('/favicon', express.static(__dirname + '/app/assets/favicon'));
 app.use("/assets", express.static(__dirname + '/app/assets'));
 
-/*
-app.use('/img',express.static(path.join(__dirname, '/app/assets/img')));
-app.use('/js',express.static(path.join(__dirname, 'app/assets/js')));
-app.use('/css',express.static(path.join(__dirname, 'app/assets/css')));
-*/
-//******** End Admin Panel ******//
 
 
 app.listen(app.get('port'));
