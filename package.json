@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "angular": "^1.6.2",
     "angular-animate": "^1.6.2",
@@ -18,14 +22,8 @@
     "nodemon": "^1.11.0",
     "typeahead.js": "^0.11.1"
   },
-  "devDependencies": {
-    "nodemon": "^1.11.0"
-    
-  },
-  "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mkgajera/callback.git"
@@ -34,3 +32,5 @@
   "license": "ISC",
   "homepage": "https://github.com/mkgajera/callback#readme"
 }
+
+
